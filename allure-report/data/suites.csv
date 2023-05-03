@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Apr 28 08:39:58 BRT 2023","Fri Apr 28 08:39:58 BRT 2023","142","","Exercicio","","","","Cadastrando um novo produto",""
+"passed","Wed May 03 17:28:59 BRT 2023","Wed May 03 17:29:23 BRT 2023","23289","","Exercicio","","","","Cadastrando um novo produto",""
 "passed","Thu Apr 27 15:47:52 BRT 2023","Thu Apr 27 15:47:52 BRT 2023","111","","Acompanhamento da aula","","","","Validando as credenciais para logar na loja",""
-"passed","Fri Apr 28 08:39:57 BRT 2023","Fri Apr 28 08:39:58 BRT 2023","276","","Exercicio","","","","Validando as credenciais para cadastrar um produto na loja",""
+"passed","Wed May 03 17:28:41 BRT 2023","Wed May 03 17:28:59 BRT 2023","18931","","Exercicio","","","","Validando as credenciais para cadastrar um produto na loja",""

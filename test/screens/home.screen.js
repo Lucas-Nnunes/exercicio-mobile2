@@ -5,7 +5,7 @@ class HomeScreen {
     }
 
     async BottomClickSkip() {
-        this.BottomSkip.click()
+        await this.BottomSkip.click()
     }
 
 
@@ -13,7 +13,7 @@ class HomeScreen {
         return $('android=new UiSelector().text("Enter your store address")')
     }
     async EnterClick() {
-        this.#EnterStore.click()
+        await this.#EnterStore.click()
     }
 }
 

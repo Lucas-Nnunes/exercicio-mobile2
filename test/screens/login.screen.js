@@ -1,24 +1,30 @@
 class LoginScreen {
 
-    get #LoginStore() { return $('android=new UiSelector().text("Site address")') }
-    get #Continue() { return $('id:00000000-0000-030f-ffff-ffff00000030') }
+    get #LoginStore() { return $('android.widget.EditText') }
+    get #Continue() { return $('id:bottom_button') }
 
     get #LoginEmail() { return $('android=new UiSelector().text("Email address")') }
-    get #BottomEmail() {return $('id: 00000000-0000-0321-ffff-ffff00000038')}
+    get #BottomEmail() { return $('id:login_continue_button') }
 
-    get #LoginPassword() {return $('id: 00000000-0000-033d-ffff-ffff0000002f')}
-    get #BotaoSenha() {return $('id:00000000-0000-033d-ffff-ffff00000037')}
-    
+    get #LoginPassword() {return $('android.widget.EditText') }
+    get #BotaoSenha() { return $('id:bottom_button') }
 
 
-    async CampoText(url) { this.#LoginStore.SetValue(url) }
-    async Next() { this.#Continue.click() }
-    async EmailText(email) {this.#LoginEmail.SetValue(email)
-    this.#LoginEmail.click()}
-    
-    async Next2() {this.#BottomEmail.click()}
-    async LogPassword(senha) {this.#LoginPassword.SetValue(senha)}
-    async ContinuePassword(){this.#BotaoSenha.click()}
+
+    async CampoText(url) {
+        await this.#LoginStore.setValue(url)
+    }
+    async Next() { await this.#Continue.click() }
+   
+
+    async EmailText(email) {
+        await this.#LoginEmail.setValue(email)
+    }
+    async Next2() {await this.#BottomEmail.click()}
+
+
+    async LogPassword(senha) { await this.#LoginPassword.setValue(senha) }
+    async ContinuePassword() { await this.#BotaoSenha.click() }
 
 }
 

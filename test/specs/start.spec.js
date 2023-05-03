@@ -1,3 +1,4 @@
+
 const homeScreen = require("../screens/home.screen");
 const loginScreen = require("../screens/login.screen");
 const produtoScreen = require("../screens/produto.screen");
@@ -13,6 +14,9 @@ describe('Exercicio', () => {
         await loginScreen.Next2()
         await loginScreen.LogPassword('GD*peToHNJ1#c$sgk08EaYJQ')
         await loginScreen.ContinuePassword()   
+
+        expect(await $('EBAC - Shop')).toBeDisplayed()
+
     });
  
 
@@ -22,5 +26,7 @@ describe('Exercicio', () => {
         await produtoScreen.ClickProduto()
         await produtoScreen.DescritionProduct('Produto2')
         await produtoScreen.ClickFinish()
+
+        expect(await $('Produto2')).toBeDisplayed()
     });
 });

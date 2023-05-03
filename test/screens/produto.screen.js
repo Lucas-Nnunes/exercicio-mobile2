@@ -1,27 +1,27 @@
 class ProdutoScreen {
 
 get BottomAdd (){
-    return $('id:navigation_bar_item_icon_view')
+    return $('id:products')
 }
 async ClickBottomAdd() {
-    this.BottomAdd.click()
+    await this.BottomAdd.click()
 }
 //Etapa de adicionar produto
 
 
 get BottomProductAdd(){
-    return $('id: addProductButton')
+    return $('android.widget.ImageButton')
 }
 async ClickBottomProduct(){
-    this.BottomProductAdd.click()
+    await this.BottomProductAdd.click()
 }
 
 //
 get AddProduct(){
-return $('id: 00000000-0000-0387-ffff-ffff00000157')
+return $('android.view.ViewGroup')
 }
 async ClickProduto(){
-    this.AddProduct.click()
+    await this.AddProduct.click()
 }
 //
 
@@ -29,8 +29,7 @@ get NameProduto(){
     return $('android=new UiSelector().text("Enter Product Title")')
 }
 async DescritionProduct(texto){
-    this.NameProduto.click()
-    this.NameProduto.SetValue(texto)
+     await this.NameProduto.setValue(texto)
 }
 
 //
